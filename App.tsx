@@ -3,14 +3,24 @@ import { Text, View, SafeAreaView, StyleSheet } from 'react-native';
 
 import HelloWorldScreen from './src/presentation/screens/HelloWorldScreen';
 import CounterScreen from './src/presentation/screens/CounterScreen';
+import { PaperProvider } from 'react-native-paper';
+import CounterM3Screen from './src/presentation/screens/CounterM3Screen';
 
+import IonIcon from 'react-native-vector-icons/Ionicons'
 
 export const App = () => {
+
+  const iconProvider = (props: any) => <IonIcon {...props} />;
+
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      {/* <HelloWorldScreen name='Panshibe'/> */}
-      <CounterScreen />
-    </SafeAreaView>
+    <PaperProvider settings={{ icon: iconProvider }}>
+      <SafeAreaView style={{ flex: 1 }}>
+
+        {/* <HelloWorldScreen name='Panshibe'/> */}
+        {/* <CounterScreen /> */}
+        <CounterM3Screen />
+      </SafeAreaView>
+    </PaperProvider>
   )
 }
 
