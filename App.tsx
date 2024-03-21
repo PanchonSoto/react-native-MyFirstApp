@@ -12,6 +12,7 @@ import { BoxObjectModelScreen } from './src/presentation/screens/BoxObjectModelS
 import { DimensionScreen } from './src/presentation/screens/DimensionScreen';
 import { PositionScreen } from './src/presentation/screens/PositionScreen';
 import { FlexScreen } from './src/presentation/screens/FlexScreen';
+import { FlexDirectionScreen } from './src/presentation/screens/FlexDirectionScreen';
 
 export const App = () => {
 
@@ -27,7 +28,8 @@ export const App = () => {
         {/* <BoxObjectModelScreen /> */}
         {/* <DimensionScreen /> */}
         {/* <PositionScreen /> */}
-        <FlexScreen />
+        {/* <FlexScreen /> */}
+        <FlexDirectionScreen />
       </SafeAreaView>
     </PaperProvider>
   )
